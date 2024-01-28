@@ -1,0 +1,47 @@
+<p>
+  Publicación
+</p>
+
+<list>
+  <ion-item>
+    <ion-input
+    [(ngModel)]="avisoStr"
+    required=""required="
+    minleght="5"
+    #avisoInput="ngModel" /> 
+  </ion-item>
+
+
+  <ion-item>
+    <ion-text>La descripcion debe tener una extension mínima de 20 caracteres</ion-text>
+  </ion-item>
+</list>
+
+
+
+<Div>
+action="#" method="post" enctype="multipart/form-data">
+
+  <label for="titulo">Título:</label>
+  <input type="text" id="titulo" name="titulo" required>
+
+  <br>
+
+  <label for="foto">Fotografía:</label>
+  <input type="file" id="foto" name="foto">
+
+  <br>
+
+  <label for="descripcion">Descripción:</label>
+  <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+ 
+  <input [(ngModel)]="avisoStr" type="text" />
+  <button (click)="onClick()">GUARDAR</button>
+</Div>
+
+
+  
+
+
+
